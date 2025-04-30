@@ -1,65 +1,39 @@
-/* Navbar Styling */
-.navbar {
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
   background-color: #f8f9fa;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 1rem 2rem;
+  color: #333;
 }
 
-.navbar-brand img {
-  height: 40px;
-  width: auto;
+header img {
+  max-height: 60px;
 }
 
-.navbar-nav {
-  margin-left: auto;
+.jumbotron {
+  background: url("../images/header-bg.jpg") center center / cover no-repeat;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
-.nav-link {
-  color: #333 !important;
-  font-weight: 500;
-  margin: 0 10px;
-  transition: color 0.3s ease;
+footer a {
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
-.nav-link:hover {
-  color: #007bff !important;
+.card {
+  transition: transform 0.3s;
 }
 
-.nav-link.active {
-  color: #007bff !important;
-  font-weight: 600;
+.card:hover {
+  transform: scale(1.03);
 }
 
-.navbar-toggler {
-  border: none;
-  padding: 0.5rem;
-}
-
-.dropdown-menu {
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.dropdown-item:hover {
-  background-color: #f8f9fa;
-  color: #007bff;
-}
-
-/* Make navbar sticky */
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-/* Responsive adjustments */
-@media (max-width: 991px) {
-  .navbar-nav {
-    margin-left: 0;
-    padding: 1rem 0;
+@media (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 2rem;
   }
-
-  .nav-link {
-    padding: 0.5rem 0;
+  .card {
+    margin-bottom: 1rem;
   }
 }
