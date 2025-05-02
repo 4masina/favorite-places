@@ -1,9 +1,12 @@
-/* styles.css */
-
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
+  background-color: #e2b456;
+  color: #e2b456;
+}
+
+header {
+  background-color: rgba(193, 166, 194, 255);
+  color: #e2b456;
 }
 
 header img {
@@ -11,14 +14,27 @@ header img {
 }
 
 .jumbotron {
-  background: url("../images/header-bg.jpg") center center / cover no-repeat;
-  color: white;
+  background-image: url("../images/favplac.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  color: #e2b456;
 }
 
 footer a {
   text-decoration: none;
   font-size: 1.2rem;
+  background-color: rgba(198, 172, 200, 255);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(198, 172, 200, 255);
+  color: #e2b456;
+  padding: 1rem;
+  text-align: center;
 }
 
 .card {
